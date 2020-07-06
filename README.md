@@ -1,3 +1,17 @@
+
+Uygulamanın amacı spring rest ve angular kullanılarak  hesap makinesi yapmaktır. 
+Hesaplanıcak sayılar ve işlemin yapılacağı opeator ui' dan request olarak gönderilmektedir.
+Hesaplama  backend ' de yapılmaktadır. Hesaplama yapıldıktan sonra response olarak tekrar ui' tarafına 
+response olarak gönderilmektedir. 
+
+
+Uygulamada backend ve ui ayrı olarak ayağı kaldırılması gerekiyor. 
+
+ui tarafının ayağı kaldırılması için npm ve node js yüklenmesi gerekiyor.
+Backend için ise maven yüklü olması yeterli olacaktır. 
+
+
+
 # AngularCalculator
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
