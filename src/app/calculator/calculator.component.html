@@ -1,0 +1,43 @@
+
+<div class="container" id = "form-container">
+
+  <div class="row">
+    <h3>Calculator</h3>
+  </div>
+ <h3> Result:   <label >{{result}}</label>
+  <label style="margin-left: 190px; font-size: 12px" >
+    <h3> {{calculator.operation}} </h3> </label>
+ </h3>
+
+
+
+
+  <div class="row">
+  <input type="text" id = "inputText" [(ngModel)]="calculateNumber"  [ngModelOptions]="{standalone: true}">
+
+</div>
+<div class="row">
+  <input type="button" (click)="addNumberToInput('7')"  id = "inputButton" style= "background-color: beige;" value="7">
+  <input type="button"  (click)="addNumberToInput('8')" id = "inputButton" style= "background-color: beige;" value="8">
+  <input type="button" (click)="addNumberToInput('9')" id = "inputButton" style= "background-color: beige;" value="9">
+  <input type="submit"  (click)="setOperation('-')"  id = "inputButton" style= "background-color: dfe1e5;" value="-">
+</div>
+<div class="row">
+  <input type="button" (click)="addNumberToInput('4')" id = "inputButton" style= "background-color: beige;" value="4">
+  <input type="button" (click)="addNumberToInput('5')" id = "inputButton" style= "background-color: beige;" value="5">
+  <input type="button" (click)="addNumberToInput('6')" id = "inputButton" style= "background-color: beige;" value="6">
+  <input type="submit" (click)="setOperation('/')" id = "inputButton" style= "background-color: dfe1e5;" value="/">
+</div>
+<div class="row">
+  <input type="submit" (click)="addNumberToInput('1')" id = "inputButton" style= "background-color: beige;" value="1">
+  <input type="button" (click)="addNumberToInput('2')" id = "inputButton" style= "background-color: beige;" value="2">
+  <input type="button" (click)="addNumberToInput('3')" id = "inputButton" style= "background-color: beige;" value="3">
+  <input type="submit" (click)="setOperation('*')" id = "inputButton" style= "background-color: dfe1e5;" value="*">
+</div>
+<div class="row">
+  <input type="button" (click)="addNumberToInput('0')" id = "inputButton" style= "background-color: beige;"  value="0">
+  <input type="submit" (click)="clear()"   id = "inputButton" style= "background-color: gray;" value="C">
+  <input type="submit" (click)="calculate()" id = "inputButton" style= "background-color: #4285f4; color: #fff; padding: 5px 27px;" value="=">
+  <input type="submit" (click)="setOperation('+')" id = "inputButton" style= "background-color: dfe1e5;" value="+">
+</div>
+</div>
